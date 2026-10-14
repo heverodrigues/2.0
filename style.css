@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #0759b5, #16a6d9);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.introducao,
+.reflexao {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.card {
+    flex: 1;
+    min-width: 220px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 5px solid #168bd2;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.card h2 {
+    color: #0759b5;
+    margin-bottom: 10px;
+}
+
+.reflexao {
+    text-align: center;
+}
+
+button {
+    background-color: #0759b5;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #064080;
+}
+
+#resposta {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0759b5;
+}
+
+footer {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+    }
+}
